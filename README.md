@@ -1,4 +1,5 @@
 # Gaelic Games Network
+The Gaelic Games Network (GGN) is a dynamic and interactive social media platform designed specifically for enthusiasts and followers of Gaelic Athletic Association (GAA) events, teams, and topics. This application provides a space for GAA fans to connect, discuss, and engage with the vibrant GAA community.
 
 ## Contents
 - [User Experience (UX)](#user-experience)
