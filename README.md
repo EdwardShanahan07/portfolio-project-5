@@ -6,7 +6,7 @@ The Gaelic Games Network (GGN) is a dynamic and interactive social media platfor
     - [Project Objective](#project-objective)
     - [User Stories](#user-stories)
         - [Sprint 1](#sprint-1)
-        - [Sprint 1](#sprint-2)
+        - [Sprint 2](#sprint-2)
 - [Database Design](#database-design)
 - [Languages and Frameworks](#languages-and-frameworks)
     - [Languages](#languages)
@@ -31,9 +31,9 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 8. As a **User**, I can **have my logged-in status until I choose to log out** so that **my experience isn't compromised**
 
 ### Sprint 2
-As a **Logged In User**, I can **create a post**  so that **I can share my latest updated**
-As a **User**, I can **view a post**  so that **I can learn more about that post**
-As a **Logged In User**, I can **like a post ** so that **I can show my support to other users**
+- As a **Logged In User**, I can **create a post**  so that **I can share my latest updated**
+- As a **User**, I can **view a post**  so that **I can learn more about that post**
+- As a **Logged In User**, I can **like a post ** so that **I can show my support to other users**
 
 ## Database Design
 ![](./readme-assets/images/erd.png)
