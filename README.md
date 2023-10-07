@@ -8,6 +8,8 @@ The Gaelic Games Network (GGN) is a dynamic and interactive social media platfor
         - [Sprint 1](#sprint-1)
         - [Sprint 2](#sprint-2)
         - [Sprint 3](#sprint-3)
+        - [Sprint 4](#sprint-4)
+        - [Sprint 5](#sprint-5)
 - [Database Design](#database-design)
 - [Languages and Frameworks](#languages-and-frameworks)
     - [Languages](#languages)
@@ -50,6 +52,15 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 5. As a **User**, I can **comment on a post** so that **I can see what other users thought about the post**
 6. As a **Comment Owner**, I can **delete my own comment on a post** so that **I can control my own comments**
 7. As a **comment Owner**, I can **edit a comment on a post** so that **I can correct or update the comment**
+
+### Sprint 5
+1. As a **User**, I can **view other users** so that **I can see their posts and learn more about them**
+2. As a **User**, I can **see a list of the most followed user profiles** so that **I can see which profiles are popular**
+3. As a **Logged In User**, I can **see a list of all the users** so that **I can see who I can follow**
+4. As a **User**, I can **see stats on a specific user profile page** so that **I can learn more about the user**
+5. As a **Logged In User**, I can **follow and unfollow other users** so that **I can see or remove posts by specific users**
+6. As a **Logged In User**, I can **edit my profile** so that **I can keep my profile update**
+7. As a **User**, I can **update my username and password** so that **I can change my displayed name and keep my account secure**
 
 ## Database Design
 ![](./readme-assets/images/erd.png)
