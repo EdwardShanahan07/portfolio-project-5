@@ -48,7 +48,7 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 1. As a **User**, I can **view a pos** so that **I can view a list of comments on posts**
 2. As a **Post Owner**, I can **edit my post** so that **I can make any corrections or update the post**
 3. As a **Logged In User**, I can **post a comment on a post** so that **I can share my opinion on the post**
-4. As a **User**, I can **see the date on a comment ** so that **I know how old the comment is**
+4. As a **User**, I can **see the date on a comment** so that **I know how old the comment is**
 5. As a **User**, I can **comment on a post** so that **I can see what other users thought about the post**
 6. As a **Comment Owner**, I can **delete my own comment on a post** so that **I can control my own comments**
 7. As a **comment Owner**, I can **edit a comment on a post** so that **I can correct or update the comment**
@@ -81,3 +81,4 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 - Django 4.0
 - django-cloudinary-storage 0.3.0
 - Pillow 8.2.0
+- djangorestframework
