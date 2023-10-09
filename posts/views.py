@@ -3,6 +3,7 @@ from rest_framework import generics, permissions, filters
 from drf_api.permissions import IsOwnerOrReadOnly
 from .models import Post
 from .serializers import PostSerializer
+from django_filters.rest_framework import DjangoFilterBackend
 
 
 class PostList(generics.ListCreateAPIView):
@@ -17,13 +18,21 @@ class PostList(generics.ListCreateAPIView):
         comments_count=Count('comment', distinct=True)
     ).order_by('-created_at')
     filter_backends = [
-        filters.OrderingFilter
+        filters.OrderingFilter,
+        filters.SearchFilter,
+        DjangoFilterBackend,
     ]
     ordering_fields = [
         'likes_count',
         'comments_count',
         'likes__created_at',
     ]
+    search_fields = ['owner__username', 'tag']
+    filterset_fields = [
+        'owner__profile',
+        'owner__followed__owner__profile',
+        'likes__owner__profile'
+        ]
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)

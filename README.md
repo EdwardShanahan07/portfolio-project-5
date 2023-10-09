@@ -82,3 +82,4 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 - django-cloudinary-storage 0.3.0
 - Pillow 8.2.0
 - djangorestframework
+- django-filter
