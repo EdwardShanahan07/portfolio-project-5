@@ -49,6 +49,6 @@ class PostSerializer(serializers.ModelSerializer):
             'content',
             'image',
             'image_filter',
-            'tag'
+            'tag',
             'like_id'
         ]
