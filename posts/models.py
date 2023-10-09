@@ -31,6 +31,7 @@ class Post(models.Model):
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
     )
+    tag = models.CharField(max_length=25, blank=True)
 
     
     class Meta:
