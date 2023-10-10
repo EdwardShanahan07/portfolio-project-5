@@ -89,3 +89,4 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 - dj_database_url
 - gunicorn
 - django-cors-headers
+- create-react-app@5.0.1
