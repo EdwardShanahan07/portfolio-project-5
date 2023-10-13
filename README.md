@@ -90,3 +90,4 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 - gunicorn
 - django-cors-headers
 - create-react-app@5.0.1
+- react-bootstrap
