@@ -38,7 +38,8 @@ DEBUG = 'DEBUG' in os.environ
 
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
-    '8000-edwardshanahan07-portfol-13lbnwrirf.us2.codeanyapp.com',
+    'localhost',
+    '8000-edwardshanahan07-portfol-te2ytmwt3o.us2.codeanyapp.com',
 ]
 
 # Application definition

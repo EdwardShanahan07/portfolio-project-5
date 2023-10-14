@@ -2,16 +2,18 @@
 The Gaelic Games Network (GGN) is a dynamic and interactive social media platform designed specifically for enthusiasts and followers of Gaelic Athletic Association (GAA) events, teams, and topics. This application provides a space for GAA fans to connect, discuss, and engage with the vibrant GAA community.
 
 ## Contents
-- [User Experience (UX)](#user-experience)
+- [Gaelic Games Network](#gaelic-games-network)
+  - [Contents](#contents)
+  - [User Experience](#user-experience)
     - [Project Objective](#project-objective)
     - [User Stories](#user-stories)
-        - [Sprint 1](#sprint-1)
-        - [Sprint 2](#sprint-2)
-        - [Sprint 3](#sprint-3)
-        - [Sprint 4](#sprint-4)
-        - [Sprint 5](#sprint-5)
-- [Database Design](#database-design)
-- [Languages and Frameworks](#languages-and-frameworks)
+      - [Sprint 1](#sprint-1)
+    - [Sprint 2](#sprint-2)
+    - [Sprint 3](#sprint-3)
+    - [Sprint 4](#sprint-4)
+    - [Sprint 5](#sprint-5)
+  - [Database Design](#database-design)
+  - [Languages and Frameworks](#languages-and-frameworks)
     - [Languages](#languages)
     - [Frameworks](#frameworks)
     - [Libraries Used](#libraries-used)
@@ -91,3 +93,4 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 - django-cors-headers
 - create-react-app@5.0.1
 - react-bootstrap
+- react-router-dom
