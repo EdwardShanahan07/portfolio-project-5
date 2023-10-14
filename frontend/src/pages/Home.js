@@ -1,6 +1,7 @@
 import React from 'react'
 import {Row, Col} from "react-bootstrap"
 import styles from "../styles/Home.module.css"
+import SignUp from '../components/SignUp'
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
       </p>
       </Col>
       <Col md={6}>
-        Form
+        <SignUp />
       </Col>
     </Row>
   )
