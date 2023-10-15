@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/esm/Container';
 
 import "./api/axiosDefaults";
 import NavBar from './components/NavBar';
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 import SignUp from './components/SignUp';
 import SignInForm from './pages/SignIn';
 

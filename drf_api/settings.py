@@ -39,7 +39,6 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     os.environ.get('ALLOWED_HOST'),
     'localhost',
-    '8000-edwardshana-portfoliopr-l4vygslk5td.ws-eu105.gitpod.io',
 ]
 
 # Application definition
@@ -88,7 +87,7 @@ if 'DEV' not in os.environ:
         'rest_framework.renderers.JSONRenderer'
     ]
 
-CORS_ALLOWED_ORGIN = os.environ.get('CLIENT_ORIGIN')
+CORS_ALLOWED_ORGIN = [os.environ.get('CLIENT_ORIGIN')]
 
 REST_USE_JWT = True
 
