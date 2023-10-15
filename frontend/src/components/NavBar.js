@@ -2,12 +2,36 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import { useCurrentUser } from "../contexts/CurrentUserContext";
+import { useCurrentUser, useSetCurrentUser } from "../contexts/CurrentUserContext";
+import axios from "axios";
+import Avatar from "./Avatar";
 
 function NavBar() {
     const currentUser = useCurrentUser();
+    const setCurrentUser = useSetCurrentUser();
+    const handleSignOut = async () => {
+        try {
+          await axios.post("dj-rest-auth/logout/");
+          setCurrentUser(null);
+        } catch (err) {
+          console.log(err);
+        }
+    };
 
-    const loggedInLinks = <>{currentUser?.username}</>;
+    const loggedInLinks = (
+        <>
+            <Link to="/feed" className="nav-link">
+                Feed
+            </Link>
+            <Link to="/" className="nav-link" onClick={handleSignOut}>
+                Sign Out
+            </Link>
+            <Link to={`/profiles/${currentUser?.profile_id}`} className="nav-link">
+                <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
+            </Link>
+            
+        </>
+    );
 
     const loggedOutLinks = (
         <>
@@ -16,6 +40,8 @@ function NavBar() {
             </Link>
             <Link to="/signup" className="nav-link">
                 Sign Up
+            </Link>
+            <Link to={`/profiles/${currentUser?.profile_id}`} className="nav-link">
             </Link>
         </>
         
