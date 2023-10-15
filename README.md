@@ -17,6 +17,9 @@ The Gaelic Games Network (GGN) is a dynamic and interactive social media platfor
     - [Languages](#languages)
     - [Frameworks](#frameworks)
     - [Libraries Used](#libraries-used)
+  - [Testing](#testing)
+    - [Bugs](#bugs)
+      - [Fixed Bugs](#fixed-bugs)
 
 ## User Experience
 
@@ -94,3 +97,14 @@ Design and develop a social media application, Gaelic Games Network (GGN), that 
 - create-react-app@5.0.1
 - react-bootstrap
 - react-router-dom
+
+## Testing
+
+### Bugs
+
+#### Fixed Bugs
+POST /dj-rest-auth/registration/ HTTP/1.1" 400 58
+
+| Error | Error Message | Solution | 
+| ------------- | ------------- |
+| When signing up I got an error with the request  | POST /dj-rest-auth/registration/ HTTP/1.1" 400 58 | I added "localhost" to the ALLOWED_HOSTS in settings.py file

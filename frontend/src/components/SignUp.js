@@ -117,11 +117,6 @@ const SignUp = () => {
           </Link>
         </Container>
       </Col>
-      <Col
-        md={6}
-        className={`my-auto d-none d-md-block p-2`}
-      >
-      </Col>
     </Row>
   );
 };
