@@ -11,10 +11,10 @@ function NavBar() {
     const setCurrentUser = useSetCurrentUser();
     const handleSignOut = async () => {
         try {
-          await axios.post("dj-rest-auth/logout/");
-          setCurrentUser(null);
+            await axios.post("dj-rest-auth/logout/");
+            setCurrentUser(null);
         } catch (err) {
-          console.log(err);
+            console.log(err);
         }
     };
 
@@ -29,7 +29,7 @@ function NavBar() {
             <Link to={`/profiles/${currentUser?.profile_id}`} className="nav-link">
                 <Avatar src={currentUser?.profile_image} text="Profile" height={40} />
             </Link>
-            
+
         </>
     );
 
@@ -44,8 +44,8 @@ function NavBar() {
             <Link to={`/profiles/${currentUser?.profile_id}`} className="nav-link">
             </Link>
         </>
-        
-    )
+
+    );
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container>

@@ -8,14 +8,16 @@ import NavBar from './components/NavBar';
 import Home from './pages/home/Home';
 import SignUp from './components/SignUp';
 import SignInForm from './pages/SignIn';
+// import { useCurrentUser } from './contexts/CurrentUserContext';
 
 function App() {
+    // const currentUser = useCurrentUser();
     return (
         <div className="App">
             <NavBar />
             <Container>
                 <Switch>
-                    <Route exact path="/" render={() => <Home />}/>
+                    <Route exact path="/" render={() => <Home />} />
                     <Route exact path="/discover" render={() => <h1>Discover Page</h1>} />
                     <Route exact path="/signin" render={() => <SignInForm />} />
                     <Route exact path="/signup" render={() => <SignUp />} />
